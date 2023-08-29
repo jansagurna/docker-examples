@@ -17,3 +17,6 @@ scrape_configs:
     static_configs:
       - targets:
           - 'prometheus:9090'
+  - job_name: mysql
+    static_configs:
+      - targets: ['10.33.0.8:9104']
